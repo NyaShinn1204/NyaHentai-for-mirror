@@ -406,7 +406,7 @@ function generateRandomString($length = 10)
                 <div class="tag-list">
                     <?php if ($doujinshiList): ?>
                         <?php foreach ($doujinshiList as $item): ?>
-                            <a href="<?php echo htmlspecialchars($item['a_href'], ENT_QUOTES, 'UTF-8'); ?>">
+                            <a href="<?php echo str_replace("https://nyahentai.re/","https://dev.minohaed.com/doujinshi/nyahentai/",htmlspecialchars($item['a_href'], ENT_QUOTES, 'UTF-8')); ?>">
                                 <?php echo htmlspecialchars($item['tag_text'], ENT_QUOTES, 'UTF-8'); ?><span><?php echo htmlspecialchars($item['span_text'], ENT_QUOTES, 'UTF-8'); ?></span>
                             </a>
                         <?php endforeach; ?>
@@ -445,7 +445,7 @@ function generateRandomString($length = 10)
                 <div class="tag-list">
                     <?php if ($doujinshiList): ?>
                         <?php foreach ($doujinshiList as $item): ?>
-                            <a href="<?php echo htmlspecialchars($item['a_href'], ENT_QUOTES, 'UTF-8'); ?>">
+                            <a href="<?php echo str_replace("https://nyahentai.re/","https://dev.minohaed.com/doujinshi/nyahentai/",htmlspecialchars($item['a_href'], ENT_QUOTES, 'UTF-8')); ?>">
                                 <?php echo htmlspecialchars($item['tag_text'], ENT_QUOTES, 'UTF-8'); ?><span><?php echo htmlspecialchars($item['span_text'], ENT_QUOTES, 'UTF-8'); ?></span>
                             </a>
                         <?php endforeach; ?>
