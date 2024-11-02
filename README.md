@@ -10,7 +10,7 @@
 **※ Goのバージョン1.23以上が必要です**
 
 > [!TIP]
-> これは開發バージョンです！
+> これは開発バージョンです。正式版とかありません
 
 まず:8190のポートを:80/api/に流す必要があります。
 
@@ -23,7 +23,8 @@ git clone https://github.com/NyaShinn1204/NyaHentai-for-mirror
 
 cd NyaHentai-for-mirror/api-go
 
-go run main.go
+go run main.go //ポートフォワードしてなければ0.0.0.0:8190でapiに接続できます。0.0.0.0:8190/v1/getinfoでipが出てくれば多分生きてます。
+
 ```
 
 
