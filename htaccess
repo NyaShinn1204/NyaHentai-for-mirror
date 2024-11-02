@@ -1,0 +1,17 @@
+Options -MultiViews
+
+RewriteEngine On
+
+# NyaHentai
+RewriteRule ^doujinshi/nyahentai/fanzine/re([0-9]+)/?$ doujinshi/nyahentai/fanzine/show.php?bid=re$1 [L]
+RewriteRule ^doujinshi/nyahentai/magazine/re([0-9]+)/?$ doujinshi/nyahentai/magazine/show.php?bid=re$1 [L]
+
+RewriteRule ^doujinshi/nyahentai/circle/(.*)$ doujinshi/nyahentai/circle.php?name=$1 [L,QSA]
+RewriteRule ^doujinshi/nyahentai/artist/(.*)$ doujinshi/nyahentai/artist.php?name=$1 [L,QSA]
+RewriteRule ^doujinshi/nyahentai/character/(.*)$ doujinshi/nyahentai/character.php?name=$1 [L,QSA]
+RewriteRule ^doujinshi/nyahentai/genre/(.*)$ doujinshi/nyahentai/genre.php?name=$1 [L,QSA]
+RewriteRule ^doujinshi/nyahentai/parody/(.*)$ doujinshi/nyahentai/parody.php?name=$1 [L,QSA]
+
+# 404ページにダイレクト
+ErrorDocument 403 /assets/html/403.html
+ErrorDocument 404 /assets/html/404.html
